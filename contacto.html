@@ -97,7 +97,7 @@ CONTACTO@LUNARESIDENCIAL.COM
     </div>
   </footer>
 
-  <div id="menu" class="off">
+  <div id="menu" class="off" style="opacity: 0;">
     <div class="fixer">
     </div><div class="options">
       <ul>
@@ -113,14 +113,21 @@ CONTACTO@LUNARESIDENCIAL.COM
     <img class="close" src="assets/img/close.svg" onclick="callMenu()"/>
   </div>
 
+
   <script>
     callMenu = function(){
       
       if (document.getElementById('menu').classList.contains('off')){
         document.getElementById('menu').className = "on";
+        setTimeout(function(){ 
+          document.getElementById('menu').style.opacity = "1";
+        }, 25);
       }
       else{
-        document.getElementById('menu').className = "off";
+        document.getElementById('menu').style.opacity = "0";
+        setTimeout(function(){ 
+          document.getElementById('menu').className = "off";
+        }, 250);
       }
 
     }
