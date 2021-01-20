@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Luna</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/luna.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="left">
+      <span onclick="callMenu()">MENU</span>
+    </div>
+    <div class="right">
+      <span>SPGG</span>
+    </div>
+    <div class="logo">
+      <a href="index.html"><img src="assets/img/logo.svg" /></a>
+    </div>
+  </header>
+  <div class="page-title">
+    <span>Descubre lo indescriptible</span>
+  </div>
+  <div class="single-image">
+    <img src="assets/img/hero-01.png" />
+  </div>
+  <div class="two-cols">
+    <div class="col-block">
+      <div class="inner">
+        <img src="assets/img/proc-01.png" />
+      </div>
+    </div><div class="col-block">
+      <div class="inner">
+        <div class="text">
+          <h2>PARA LOS QUE CONOCEN EL VALOR DE EXPLORAR EL MUNDO</h2>
+          <hr>
+          <p>Luna es el más reciente proyecto de Arboleda, con Residencias Personalmente Diseñadas para las personas que buscan que cada experiencia sea inigualable y valiosa, distinguiendo siempre lo mejor de cada lugar.</p>
+          <button>Descubre las residencias ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="single-frame">
+    <div class="frame">
+      <img src="assets/img/video-01.png" />
+    </div>
+  </div>
+  <div class="two-cols">
+    <div class="col-block">
+      <div class="inner img">
+        <img src="assets/img/main01-01.png" />
+      </div>
+    </div><div class="col-block">
+      <div class="inner">
+        <div class="text">
+          <h2>EL SENTIDO DE CALIDEZ DE HOGAR EN ARMONÍA CON AMPLIOS ESPACIOS PARA LA INTERACCIÓN DE SUS HABITANTES</h2>
+          <button>Descubre las residencias ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <hr>
+    <div class="half">
+      <img src="assets/img/logo.svg">
+      <p>Blvd. Sofía #405<br>Valle del Campestre,<br>SPGG, NL., México</p>
+    </div><div class="quarter">
+      <span>CONTACTO@LUNARESIDENCIAL.COM</span><br>
+      <span>TEL. +52 (81) 1477 3040</span>
+      <div class="show1280">
+        <br>
+        <span style="color: #8F8F8F">POLÍTICA DE PRIVACIDAD</span><br>
+        <span style="color: #8F8F8F">TÉRMINOS Y CONDICIONES</span>
+      </div>
+    </div><div class="quarter hide1280">
+      <span style="color: #8F8F8F">POLÍTICA DE PRIVACIDAD</span><br>
+      <span style="color: #8F8F8F">TÉRMINOS Y CONDICIONES</span>
+    </div>
+  </footer>
+
+  <div id="menu" class="off">
+    <div class="fixer">
+    </div><div class="options">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="arboleda.html">ARBOLEDA Y SU ENTORNO</a></li>
+        <li><a href="mentes.html">MENTES MAESTRAS</a></li>
+        <li><a href="diseno.html">LUNA Y SU DISEÑO</a></li>
+        <li><a href="residencias.html">RESIDENCIAS</a></li>
+        <li><a href="amenidades.html">AMENIDADES</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+    <img class="close" src="assets/img/close.svg" onclick="callMenu()"/>
+  </div>
+
+  <script>
+    callMenu = function(){
+      
+      if (document.getElementById('menu').classList.contains('off')){
+        document.getElementById('menu').className = "on";
+      }
+      else{
+        document.getElementById('menu').className = "off";
+      }
+
+    }
+  </script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html> 
