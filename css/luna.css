@@ -8,6 +8,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+hr{
+    border-color: #000 !important;
+}
+h2{
+    font-weight: normal;
+}
 a{
     text-decoration: none;
     color: inherit;
