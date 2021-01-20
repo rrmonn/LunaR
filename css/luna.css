@@ -304,7 +304,7 @@ iframe{
     padding-right: 10%; box-sizing:border-box;
     padding-bottom: 120px;
 }
-.inner.right{
+.inner.cright{
     padding-left: 10%; box-sizing:border-box;
     padding-bottom: 120px;
 }
@@ -333,7 +333,24 @@ iframe{
     border: 1px solid #000;
     box-sizing: border-box;
 }
-
+.img-pad{
+    padding: 0 10%; box-sizing: border-box;
+}
+.col-block.mob-only{
+    display: none;
+}
+.col-block.desk-only{
+    display: inline-block;
+}
+.res-01{
+    padding-top:60px
+}
+.res-02, .am-02{
+    box-sizing: border-box; padding: 0 60px;
+}
+.res-03{
+    box-sizing: border-box; padding: 0 0 0 120px;
+}
 @media only screen and (max-width: 1480px) {
     .show1280{
         display: block;
@@ -352,7 +369,16 @@ iframe{
     header{
         display: block;
         height: 86px;
-        padding: 0 30px;
+        padding: 0 32px;
+        position: fixed;
+        background-color: #fff;
+        z-index: 1;
+        font-size: 14px;
+    }
+    .header-fix{
+        display: block;
+        height: 86px;
+        position: relative;
     }
     .single-image{
         padding: 15px 30px;
@@ -360,6 +386,10 @@ iframe{
     .single-image{
         width: 100%;
         padding: 15px 30px;
+    }
+    .two-cols{
+        padding-left: 32px;
+        padding-right: 32px;
     }
     .two-cols .col-block{
         width: 100%;
@@ -367,9 +397,18 @@ iframe{
     .single-frame{
         padding: 15px 30px;
     }
+    .two-cols .col-block .inner .text h2{
+        font-size: 16px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .two-cols .col-block .inner .text{
         width:100%;
-        padding: 30px 30px;
+        padding: 30px 0px;
+    }
+    .two-cols .col-block .inner.img{
+        padding: 0 0;
     }
     footer{
         padding: 35px 30px 60px;
@@ -380,5 +419,64 @@ iframe{
     footer .quarter{
         width: 100%;
         margin-top: 16px;
+    }
+    .img-pad{
+        padding: 0 0%; box-sizing: border-box;
+    }
+    .single-frame .frame{
+        width: 100%;
+        border: 1px solid #000;
+        padding: 16px;
+    }
+    #menu ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    #menu ul li{
+        margin-bottom: 16px
+    }
+    .col-block.mob-only{
+        display: inline-block;
+    }
+    .col-block.desk-only{
+        display: none;
+    }
+    .res-01{
+        padding-top:0px
+    }
+    .res-02{
+        box-sizing: border-box; padding: 0 0px;
+    }
+    .res-03{
+        box-sizing: border-box; padding: 80px 0 0 0px;
+    }
+    body{
+        font-family: Hoefler;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .am-01{
+        padding: 32px 16px 0px;
+        margin: 0;
+    }
+    .am-02{
+        box-sizing: border-box; padding: 0 0px;
+    }
+    .am-fix{
+        padding-top: 0px !important;
+        padding: 0px !important;
+        padding-bottom: 60px !important;
+    }
+    .inner.cleft{
+        padding-right: 0%; box-sizing:border-box;
+        padding-bottom: 60px;
+    }
+    .inner.cright{
+        padding-left: 0%; box-sizing:border-box;
+        padding-bottom: 60px;
     }
 }
