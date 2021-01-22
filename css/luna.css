@@ -11,8 +11,9 @@
 hr{
     border-color: #000 !important;
 }
-h2{
-    font-weight: normal;
+h2, h1, h3, h4{
+    font-weight: normal !important;
+    text-transform: uppercase;
 }
 a{
     text-decoration: none;
@@ -181,14 +182,14 @@ header .right span{
 }
 .two-cols .col-block .inner .text button{
     margin-top: 30px;
-    width: 100%;
     border: 1px solid #231F20;
-    padding: 30px 0;
+    padding: 30px 60px;
     text-transform: uppercase;
     font-size: 14px;
     background-color: #fff;
     cursor: pointer;
     transition: all ease .25s;
+    letter-spacing: 3px;
 }
 .two-cols .col-block .inner .text button:hover{
     background-color: #000;
@@ -228,6 +229,10 @@ footer .quarter{
     vertical-align: top;
     font-size: 13px;
     line-height: 16px;
+}
+footer span{
+    display: block;
+    margin-bottom: 8px;
 }
 .quarter.hide1280{
     display: inline-block;
@@ -332,7 +337,6 @@ iframe{
 .bylogos{
     height: 30px;
     display: inline-block;
-    margin-right: 40px;
     width: auto;
     margin-top: 30px;
 }
@@ -357,6 +361,21 @@ iframe{
 }
 .res-03{
     box-sizing: border-box; padding: 0 0 0 120px;
+}
+
+.inner.cleft h2, .inner.cright h2 {
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+.clogos{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.titlefixer{
+    font-size: 13px !important;
 }
 @media only screen and (max-width: 1480px) {
     .show1280{
@@ -485,5 +504,11 @@ iframe{
     .inner.cright{
         padding-left: 0%; box-sizing:border-box;
         padding-bottom: 60px;
+    }
+    .two-cols .col-block .inner .text button{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        letter-spacing: 3px;
     }
 }
