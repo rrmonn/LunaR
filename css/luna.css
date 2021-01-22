@@ -170,7 +170,7 @@ header .right span{
     text-align: center;
 }
 .two-cols .col-block .inner .text h2{
-    font-size: 20px;
+    font-size: 13px;
     text-transform: uppercase;
     padding: 0 16%;
     font-weight: normal;
@@ -514,5 +514,6 @@ iframe{
         padding-right: 0px;
         width: 100%;
         letter-spacing: 3px;
+        font-size: 12px !important;
     }
 }
