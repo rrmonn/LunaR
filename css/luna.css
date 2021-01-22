@@ -516,4 +516,7 @@ iframe{
         letter-spacing: 3px;
         font-size: 12px !important;
     }
+    .img-caption{
+        font-size: 10px !important;
+    }
 }
